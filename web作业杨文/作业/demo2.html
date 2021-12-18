@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+
+<body ondragstart='return false' oncontextmenu='self.event.returnValue=false'>
+  <H1>扫雷游戏</H1>
+  <table id=grid>
+
+
+    <div id='bar'>
+        <span class='bar'>剩余雷数：<label id='count'>0</label></span>
+        <span class='bar'>计时：<label id='time'>0</label>s</span>
+
+		<h2>控制面板</h2>
+		<ul  class="setting">
+			<li>
+				<label>难度:</label>
+				<input type="radio" name="level" value="1" checked="checked"/>初级
+				<input type="radio" name="level" value="2"/>中级
+				<input type="radio" name="level" value="3"/>高级
+    </div>
+    
+    <table id='grid'></table>
+
+  <script src="script.js"> </script>
+</body>
+
+</html>
