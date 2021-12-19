@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷</title>
+    <link rel="stylesheet" href="mine.css">
+</head>
+<body>
+<div>
+    长：<input id="mineX" title="长" value="20">
+    宽：<input id="mineY" title="宽" value="20">
+    雷：<input id="mineN" title="雷" value="10">
+    <button onclick="start()">开始游戏</button>
+</div>
+<table id="mineZone" class="mineZone noSelect"></table>
+<script src="mine.js"></script>
+<script>
+    function start() {
+        let x = parseInt(document.getElementById("mineX").value);
+        let y = parseInt(document.getElementById("mineY").value);
+        let n = parseInt(document.getElementById("mineN").value);
+        mine.start("mineZone", x, y, n);
+    }
+</script>
+</body>
+</html>
