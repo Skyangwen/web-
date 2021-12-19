@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.mineZone {
+    border-spacing: 0;
+    border-collapse: 0;
+}
+
+
+.mineZone td {
+    text-align: center;
+    background-color: #ddd;
+    width: 30px;
+    height: 30px;
+    /*display: inline-block;*/
+    border: 1px solid #fff;
+    line-height: 30px;
+    cursor: default;
+}
+
+.mineZone td:hover {
+    background-color: #eee;
+}
+
+.noSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+}
+
+.mineZone .open {
+    background-color: #ccc;
+}
+
+.mineZone .mine {
+    background-color: red;
+    color: white;
+}
+
+.mineZone .mine:hover {
+    background-color: red;
+}
+.mineZone .open:hover {
+    background-color: #ccc;
+}
+.mineZone .flag {
+    background-color: yellow;
+}
+.mineZone .flag:hover {
+    background-color: yellow;
+}
+.mineZone .win:hover {
+    background-color: green;
+}.mineZone .win {
+    background-color: green;
+    color: white;
+}
+
